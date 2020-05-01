@@ -1,5 +1,7 @@
 import React from 'react';
 import { Account, TokenList } from './components';
+import { AccountContextProvider } from './contexts/AccountContext';
+import { defaultWeb3Context } from './utils/web3';
 
 function App() {
   return (
@@ -7,12 +9,15 @@ function App() {
         <header>
           <h1>Wipeth</h1>
         </header>
-        <div>
-          <Account />
-        </div>
-        <div>
-          <TokenList />
-        </div>
+        
+        <AccountContextProvider value={defaultWeb3Context}>
+          <div>
+            <Account />
+          </div>
+          <div>
+            <TokenList />
+          </div>
+        </AccountContextProvider>
       </div>
   );
 }
