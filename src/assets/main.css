@@ -1,11 +1,27 @@
 @import '~antd/dist/antd.css';
 
+html {
+  margin:    0 auto;
+  max-width: 900px;
+}
+
 body {
   text-align: center;
   background-color: #282c34;
   color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6 { 
+div, p, 
+.ant-list-item,
+.ant-list-item-meta-title,
+.ant-list-item-meta-description { 
   color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6{ 
+  color: #fff;
+}
+
+.content { 
+  text-align: left;
 }

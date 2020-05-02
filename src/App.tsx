@@ -10,13 +10,12 @@ function App() {
           <h1>Wipeth</h1>
         </header>
         
+        <Account />
+        
         <AccountContextProvider value={defaultWeb3Context}>
-          <div>
-            <Account />
-          </div>
-          <div>
-            <TokenList />
-          </div>
+        <div className="content">
+          <TokenList />
+        </div>
         </AccountContextProvider>
       </div>
   );

@@ -1,6 +1,7 @@
-import React, { useContext, useState } from 'react';
-import { useAccountContext, AccountContext } from '../contexts/AccountContext';
+import React from 'react';
+import { useAccountContext } from '../contexts/AccountContext';
 import { getWeb3Context } from '../utils/web3';
+import { Button } from 'antd';
 
 export const Account = () => {
   const accountContext = useAccountContext();
@@ -22,9 +23,7 @@ export const Account = () => {
 
   return (
     <div>
-      <button onClick={() => connectWeb3()}>
-        Connect
-      </button>
+      <Button onClick={() => connectWeb3()}>Connect</Button>
     </div>
   );
 }
