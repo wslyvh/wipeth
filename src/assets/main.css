@@ -1,5 +1,11 @@
+@import '~antd/dist/antd.css';
+
 body {
   text-align: center;
   background-color: #282c34;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 { 
   color: #fff;
 }
